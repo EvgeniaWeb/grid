@@ -1,0 +1,291 @@
+/* Меню и главный экран */
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    
+    padding: 0;
+}
+
+body {
+    font-family: proxima, Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    overflow-wrap: break-word;
+}
+
+.container {
+    max-width: 100%;
+    min-width: 320px;
+}
+
+.wrap {
+    max-width: 1500px;
+    min-width: 290px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.header {
+    background: url(/img/header.jpg) center top no-repeat;
+    background-size: cover;
+    color: #000;
+}
+
+.header_wrap {
+    padding-bottom: 65px;
+}
+
+.header_top {
+    display: grid;
+    grid-template-columns: 224px 1fr;
+    grid-column-gap: 20px;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.logo_link {
+    display: block;
+}
+
+.logo_img {
+    display: block;
+    max-width: 100%;
+}
+
+.header_info {
+    margin-top: 16.6%;
+    margin-bottom: 16.6%;
+}
+
+.header_title {
+    color: white;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 36px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.header_text {
+    text-align: center;
+}
+
+.header_link,
+.instagram_link {
+    font-size: 30px;
+    line-height: 75px;
+    color: #F84545;
+    font-weight: 800;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 12px;
+    transition-duration: 500ms;
+    transition-property: letter-spacing;
+}
+
+.header_link:hover {
+    letter-spacing: 15px;
+}
+
+.header_btn {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 84px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.menu_list {
+    display: flex;
+    margin-left: 65px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu_item {
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 6.3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 65px;
+}
+
+.menu_black .menu_list {
+    justify-content: flex-start;
+}
+
+.menu_item_black .menu_item {
+    color: black;
+}
+
+.menu_item:first-child {
+    margin-left: 0;
+}
+
+.menu_link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu_black .menu_link {
+    color: black;
+}
+
+/* Контентная часть */
+
+.content_wrap {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 462px));
+    grid-gap: 57px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+
+.content_link {
+    grid-column: span 1;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 35px;
+    text-decoration: none;
+    background: url(/img/1.jpg) no-repeat #000;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.content_link:nth-child(1) {
+    padding-top: 44.8%;
+}
+
+.content_link:nth-child(2) {
+    background-image: url(/img/2.jpg);
+
+}
+
+.content_link:nth-child(3) {
+    background-image: url(/img/3.jpg);
+
+}
+
+.content_link:nth-child(4) {
+    background-image: url(/img/4.jpg);
+
+}
+
+.content_link:nth-child(5) {
+    background-image: url(/img/5.jpg);
+
+}
+
+.content_link:nth-child(6) {
+    background-image: url(/img/6.jpg);
+
+}
+
+.content_link-two {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.content_link-pt {
+    padding-top: 77.9%;
+}
+
+.content_icon {
+    align-self: flex-start;
+    display: block;
+    max-width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.content_name {
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: 16px;
+    color: white;
+}
+
+/* Секция инстаграм */
+
+.instagram {
+    background: url(/img/insta.jpg) center top no-repeat #000;
+    background-size: cover;
+}
+
+.instagram_info {
+    text-align: center;
+    padding-top: 24%;
+    padding-bottom: 24%;
+}
+
+.instagram_title {
+    color: white;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 36px;
+    font-weight: normal;
+}
+
+.instagram_link {
+    font-size: 30px;
+    line-height: 75px;
+    color: #F84545;
+    font-weight: 800;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 12px;
+}
+
+.instagram_link:hover {
+    letter-spacing: 15px;
+}
+
+/* Подвал */
+
+.footer_social_icon {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+.footer_menu_list {
+    display: flex;
+    width: 800px;
+    /* margin-left: 65px; */
+    justify-content: space-between;
+    list-style: none;
+}
+
+.footer_menu_item {
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 6.3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    /* margin-left: 65px; */
+}
+
+.footer_menu_link {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.social_icon {
+    display: flex;
+    width: 200px;
+    /* margin-right: 65px; */
+    justify-content: space-between;
+    list-style: none;
+}
